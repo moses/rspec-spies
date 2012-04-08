@@ -8,6 +8,7 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   gem.name = "moses-rspec-spies"
   gem.summary = %Q{rspec has gone without test spies. no more!}
+  gem.version = File.exist?('VERSION') ? File.read('VERSION') : ""
   gem.description = %Q{test spies, for rspec (forked from technicalpickles/rspec-spies)}
   gem.email = "moses@moseshohman.com"
   gem.homepage = "http://github.com/moses/rspec-spies"
