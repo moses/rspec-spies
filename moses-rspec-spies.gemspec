@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/rspec-spies.rb",
+    "moses-rspec-spies.gemspec",
     "rspec-spies.gemspec",
     "spec/rspec-spies_spec.rb",
     "spec/spec.opts",
