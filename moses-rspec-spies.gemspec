@@ -26,7 +26,6 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/rspec-spies.rb",
     "moses-rspec-spies.gemspec",
-    "rspec-spies.gemspec",
     "spec/rspec-spies_spec.rb",
     "spec/spec.opts",
     "spec/spec_helper.rb"
