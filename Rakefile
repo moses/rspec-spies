@@ -6,12 +6,12 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  gem.name = "rspec-spies"
-  gem.summary = %Q{rspec has gone without tests spies. no more!}
-  gem.description = %Q{test spies, for rspec}
-  gem.email = "josh@technicalpickles.com"
-  gem.homepage = "http://github.com/technicalpickles/rspec-spies"
-  gem.authors = ["Joshua Nichols"]
+  gem.name = "moses-rspec-spies"
+  gem.summary = %Q{rspec has gone without test spies. no more!}
+  gem.description = %Q{test spies, for rspec (forked from technicalpickles/rspec-spies)}
+  gem.email = "moses@moseshohman.com"
+  gem.homepage = "http://github.com/moses/rspec-spies"
+  gem.authors = ["Joshua Nichols", "Moses Hohman"]
   # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
 end
 Jeweler::GemcutterTasks.new
