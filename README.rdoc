@@ -1,5 +1,27 @@
 = rspec-spies
 
+== How this differs from technicalpickles/rspec-spies
+
+Instead of having to specify the arguments of your expected call directly, as in
+
+    it "should find post by id" do
+      Post.should have_received(:find).with(@post.id)
+    end
+
+you can now just leave off the arguments if you don't need to specify them:
+
+    it "should find post by id" do
+      Post.should have_received(:find)
+    end
+
+You can also use RSpec argument matchers:
+
+    it "should find post by id" do
+      Post.should have_received(:validate).with(any_instance(Validator))
+    end
+
+== Intro
+
 Behold, the Test Spies pattern! http://xunitpatterns.com/Test%20Spy.html
 
 Some other mocking frameworks support this. In particular, rr, notamock, and jferris's fork of mocha. It'd be great to see support for it in rspec's mocking library as well.

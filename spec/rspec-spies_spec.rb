@@ -21,6 +21,13 @@ module Spec
         have_received(:slice).matches?(@object).should be_true
       end
 
+      it "matches using argument matchers" do
+        @object.stub!(:slice)
+        @object.slice(5)
+
+        have_received(:slice).with(an_instance_of(Fixnum)).matches?(@object).should be_true
+      end
+
       it "matches if specifies nil arg, if method is called with a nil arg" do
         @object.stub!(:slice)
         @object.slice(nil)
